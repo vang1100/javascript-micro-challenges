@@ -21,9 +21,18 @@
 //     should evaluate to "The numbers are the same!"
 
 
-function compareTwoNumbers() {
-
+function compareTwoNumbers(num0, num1) {
+if (num0 > num1) {
+  return 'The first number was bigger!';
+} if (num0 < num1) {
+  return 'The second number was bigger!';
+} else {
+  return "The numbers are the same!";
 }
+}
+
+console.log(compareTwoNumbers(40,9));
+console.log(compareTwoNumbers(40,9000));
 
 try {
   module.exports = compareTwoNumbers;

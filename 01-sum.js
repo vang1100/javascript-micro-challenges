@@ -9,10 +9,20 @@
 // sum(2, 7)
 //     should evaluate to 9
 
+console.log('testing');
 
-function sum() {
+function sum( num1, num2 ) {
+  console.log('should evaluate to', num1, num2 );
+return num1 + num2;
 
 }
+
+//let result = total (7, 9); 
+console.log(sum(2,3));
+console.log(sum(100, 100));
+
+//function sum(1,1);
+
 
 try {
   module.exports = sum;

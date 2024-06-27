@@ -10,10 +10,25 @@
 // addFirstAndLast([-9, 12, 33, 29])
 //     should evaluate to 20
 
+let ages = [20,40,60,80,100];
 
-function addFirstAndLast() {
+// function addFirstAndLast(array) {
+//   if (array.length-1){
+//     return 
+//   }
+// }
 
+
+function addFirstAndLast (Arrays) {
+
+let sum = Arrays[0] + Arrays[Arrays.length - 1];
+return sum;
 }
+
+console.log(addFirstAndLast(ages));
+
+
+
 
 try {
   module.exports = addFirstAndLast;
